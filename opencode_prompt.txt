@@ -1,0 +1,50 @@
+EXPO/METRO BUNDLER ERROR - Immediate Fix Required
+
+The Expo React Native app failed to build due to a Metro bundler error. You need to fix this NOW.
+
+## Error Type: Expo/Metro build error: Metro error
+
+## Metro Bundler Output:
+0.3.0". Expected the version to be in inclusive range "0.5.x, 0.6.x, 0.7.x". Please install a compatible version of `react-native-worklets`.
+    at new ReanimatedErrorConstructor (/app/expo/node_modules/react-native-reanimated/lib/module/common/errors.js:9:25)
+    at assertWorkletsVersion (/app/expo/node_modules/react-native-reanimated/lib/module/platform-specific/workletsVersion.js:10:11)
+    at new JSReanimated (/app/expo/node_modules/react-native-reanimated/lib/module/ReanimatedModule/js-reanimated/JSReanimated.js:22:28)
+    at createJSReanimatedModule (/app/expo/node_modules/react-native-reanimated/lib/module/ReanimatedModule/js-reanimated/JSReanimated.js:8:10)
+    at factory (/app/expo/node_modules/react-native-reanimated/lib/module/ReanimatedModule/index.web.js:5:57)
+    at loadModuleImplementation (/app/expo/node_modules/@expo/cli/build/metro-require/require.js:248:36)
+    at guardedLoadModule (/app/expo/node_modules/@expo/cli/build/metro-require/require.js:163:16)
+    at require (/app/expo/node_modules/@expo/cli/build/metro-require/require.js:74:75)
+    at factory (/app/expo/node_modules/react-native-reanimated/lib/module/featureFlags/index.js:4:1)
+    at loadModuleImplementation (/app/expo/node_modules/@expo/cli/build/metro-require/require.js:248:36)
+Web node_modules/expo-router/entry.js ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░ 95.7% (1074/1098)
+Web node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Web node_modules/expo-router/entry.js ░░░░░░░░░░░░░░░░  0.0% (0/1)
+Error: Premature close
+    at onclose (node:internal/streams/end-of-stream:159:30)
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+Error: Premature close
+    at onclose (node:internal/streams/end-of-stream:159:30)
+    at processTicksAndRejections (node:internal/process/task_queues:77:11)
+Web Bundled 10934ms node_modules/expo-router/entry.js (1129 modules)
+Web Bundled 9967ms node_modules/expo-router/entry.js (1 module)
+Web Bundled 3330ms node_modules/expo-router/entry.js (1 module)
+
+
+## Working Directory: /app/expo
+
+## Common Issues to Check:
+1. **Package version conflicts** - Check package.json for incompatible versions (e.g., react-native-worklets, react-native-reanimated)
+2. **Missing dependencies** - Run npm install or add missing packages
+3. **Import errors** - Fix incorrect imports in .tsx/.ts/.js files
+4. **Syntax errors** - Fix TypeScript/JavaScript syntax issues
+
+## Your Task:
+1. **Read the error carefully** - Identify what package or file is causing the issue
+2. **Check package.json** at /app/expo/package.json for version conflicts
+3. **Fix the version** - Update the problematic package to a compatible version
+4. **Or fix the code** - If it's a code error, fix the specific file
+
+IMPORTANT: This is an EXPO/React Native app, NOT a backend. Focus on:
+- package.json dependency versions
+- React Native component code
+- Metro bundler configuration
