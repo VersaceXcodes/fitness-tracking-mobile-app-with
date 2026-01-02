@@ -1,0 +1,274 @@
+[
+  {
+    "id": "user-auth-registration",
+    "category": "auth",
+    "description": "Allow users to create new accounts with email and password",
+    "steps": [
+      "Navigate to registration screen",
+      "Enter valid email, password, and confirm password",
+      "Submit registration form",
+      "Verify account creation success message",
+      "Confirm user is logged in automatically"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 1
+  },
+  {
+    "id": "user-auth-login",
+    "category": "auth",
+    "description": "Allow existing users to log into their accounts",
+    "steps": [
+      "Navigate to login screen",
+      "Enter valid email and password credentials",
+      "Submit login form",
+      "Verify successful authentication",
+      "Confirm redirect to main dashboard"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 2
+  },
+  {
+    "id": "user-profile-management",
+    "category": "functional",
+    "description": "Allow users to view and edit their profile information including fitness goals",
+    "steps": [
+      "Navigate to profile section",
+      "View current profile information",
+      "Edit profile fields (name, age, weight, height, goals)",
+      "Save profile changes",
+      "Verify updated information is displayed"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 3
+  },
+  {
+    "id": "exercise-library-browse",
+    "category": "functional",
+    "description": "Display searchable library of exercises with instructions and demonstrations",
+    "steps": [
+      "Navigate to exercise library",
+      "Browse exercises by category or muscle group",
+      "Search for specific exercises using search bar",
+      "Select an exercise to view detailed instructions",
+      "Verify exercise images/videos load properly"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 4
+  },
+  {
+    "id": "workout-session-tracking",
+    "category": "functional",
+    "description": "Allow users to start, track, and complete workout sessions with sets, reps, and weights",
+    "steps": [
+      "Start a new workout session",
+      "Add exercises to the workout",
+      "Log sets, reps, and weights for each exercise",
+      "Complete and save the workout session",
+      "Verify workout data is stored in history"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 5
+  },
+  {
+    "id": "main-navigation",
+    "category": "ui",
+    "description": "Provide intuitive bottom tab or drawer navigation between main app sections",
+    "steps": [
+      "Open the app and view main navigation",
+      "Tap on each navigation item",
+      "Verify correct screen loads for each section",
+      "Confirm active tab is highlighted",
+      "Test navigation from different app states"
+    ],
+    "priority": 1,
+    "passes": false,
+    "selected": true,
+    "order": 6
+  },
+  {
+    "id": "workout-plans-browse",
+    "category": "functional",
+    "description": "Display pre-built workout plans that users can browse and select",
+    "steps": [
+      "Navigate to workout plans section",
+      "Browse available workout plans by category",
+      "View plan details including exercises and schedule",
+      "Select a workout plan to follow",
+      "Verify plan is added to user's active plans"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 7
+  },
+  {
+    "id": "progress-charts-display",
+    "category": "functional",
+    "description": "Show visual charts and graphs of user's fitness progress over time",
+    "steps": [
+      "Navigate to progress section",
+      "View different chart types (weight, strength, workout frequency)",
+      "Select different time ranges for data display",
+      "Verify charts update with real user data",
+      "Test chart interactions and zoom functionality"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 8
+  },
+  {
+    "id": "workout-history-view",
+    "category": "data",
+    "description": "Display chronological list of completed workouts with details",
+    "steps": [
+      "Navigate to workout history section",
+      "View list of past workouts sorted by date",
+      "Select a specific workout to view details",
+      "Verify all exercise data is displayed correctly",
+      "Test filtering and sorting options"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 9
+  },
+  {
+    "id": "social-friends-system",
+    "category": "functional",
+    "description": "Allow users to add friends and view their workout activities",
+    "steps": [
+      "Navigate to social/friends section",
+      "Search for friends by username or email",
+      "Send friend requests to other users",
+      "Accept incoming friend requests",
+      "View friends' recent workout activities"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 10
+  },
+  {
+    "id": "data-persistence",
+    "category": "data",
+    "description": "Ensure all user data is properly saved and retrieved across app sessions",
+    "steps": [
+      "Log workout data and close the app",
+      "Reopen the app after some time",
+      "Verify all previously entered data is still present",
+      "Test data persistence across app updates",
+      "Confirm data syncs properly if using cloud storage"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 11
+  },
+  {
+    "id": "custom-workout-creation",
+    "category": "functional",
+    "description": "Allow users to create and save their own custom workout routines",
+    "steps": [
+      "Navigate to workout creation screen",
+      "Add exercises from the library to create routine",
+      "Set target sets, reps, and rest times",
+      "Save the custom workout with a name",
+      "Verify custom workout appears in user's workout list"
+    ],
+    "priority": 2,
+    "passes": false,
+    "selected": true,
+    "order": 12
+  },
+  {
+    "id": "workout-timer",
+    "category": "functional",
+    "description": "Provide rest timers and workout duration tracking during exercise sessions",
+    "steps": [
+      "Start a workout session",
+      "Complete a set and start rest timer",
+      "Verify timer counts down correctly",
+      "Test timer notifications and alerts",
+      "Confirm total workout duration is tracked"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 13
+  },
+  {
+    "id": "social-activity-feed",
+    "category": "functional",
+    "description": "Display a feed of friends' workout activities and achievements",
+    "steps": [
+      "Navigate to social activity feed",
+      "View recent activities from friends",
+      "Like or comment on friends' activities",
+      "Verify feed updates with new activities",
+      "Test pull-to-refresh functionality"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 14
+  },
+  {
+    "id": "achievement-system",
+    "category": "functional",
+    "description": "Award badges and achievements for reaching fitness milestones",
+    "steps": [
+      "Complete actions that should trigger achievements",
+      "Verify achievement notifications appear",
+      "Navigate to achievements/badges section",
+      "View earned and unearned achievements",
+      "Confirm achievement progress is tracked"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 15
+  },
+  {
+    "id": "exercise-filtering-search",
+    "category": "functional",
+    "description": "Filter and search exercises by muscle group, equipment, or difficulty",
+    "steps": [
+      "Navigate to exercise library",
+      "Apply filters for muscle group and equipment",
+      "Search for exercises using keywords",
+      "Verify filtered results are accurate",
+      "Clear filters and confirm all exercises return"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 16
+  },
+  {
+    "id": "user-auth-logout",
+    "category": "auth",
+    "description": "Allow users to securely log out of their accounts",
+    "steps": [
+      "Navigate to profile or settings",
+      "Find and tap logout option",
+      "Confirm logout action if prompted",
+      "Verify user is redirected to login screen",
+      "Confirm user data is cleared from device"
+    ],
+    "priority": 3,
+    "passes": false,
+    "selected": true,
+    "order": 17
+  }
+]
