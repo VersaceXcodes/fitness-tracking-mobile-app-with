@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Connection Test</h1>
+    <div id="results"></div>
+    
+    <script>
+        const results = document.getElementById('results');
+        
+        async function testAPI() {
+            try {
+                // Test health endpoint
+                const healthResponse = await fetch('http://localhost:3000/api/health');
+                const healthData = await healthResponse.json();
+                results.innerHTML += '<p>✅ Health API: ' + JSON.stringify(healthData) + '</p>';
+                
+                // Test properties endpoint
+                const propsResponse = await fetch('http://localhost:3000/api/properties');
+                const propsData = await propsResponse.json();
+                results.innerHTML += '<p>✅ Properties API: ' + propsData.properties.length + ' properties found</p>';
+                
+                // Test CORS
+                const corsResponse = await fetch('http://localhost:3000/api/health', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Origin': 'http://localhost:5173'
+                    }
+                });
+                const corsData = await corsResponse.json();
+                results.innerHTML += '<p>✅ CORS Test: ' + JSON.stringify(corsData) + '</p>';
+                
+            } catch (error) {
+                results.innerHTML += '<p>❌ Error: ' + error.message + '</p>';
+            }
+        }
+        
+        testAPI();
+    </script>
+</body>
+</html>

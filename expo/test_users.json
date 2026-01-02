@@ -1,0 +1,96 @@
+{
+  "generated_at": "2024-10-23T09:15:00Z",
+  "user_structure": {
+    "table_name": "users",
+    "role_field": "role",
+    "registration_endpoint": "/api/auth/register",
+    "login_endpoint": "/api/auth/login"
+  },
+  "total_users": 5,
+  "verified_users": 5,
+  "users": [
+    {
+      "email": "ahmed.ali@example.com",
+      "password": "password123",
+      "role": "host",
+      "name": "Ahmed Ali",
+      "phone_number": "+218910000001",
+      "verified": true,
+      "user_id": "user_001"
+    },
+    {
+      "email": "sara.mohamed@example.com",
+      "password": "user123",
+      "role": "guest",
+      "name": "Sara Mohamed",
+      "phone_number": "+218910000003",
+      "verified": true,
+      "user_id": "user_002"
+    },
+    {
+      "email": "omar.hassan@example.com",
+      "password": "host123",
+      "role": "host",
+      "name": "Omar Hassan",
+      "phone_number": "+218910000004",
+      "verified": true,
+      "user_id": "user_003"
+    },
+    {
+      "email": "mariam.essa@example.com",
+      "password": "guest123",
+      "role": "guest",
+      "name": "Mariam Essa",
+      "phone_number": "+218910000006",
+      "verified": true,
+      "user_id": "user_004"
+    },
+    {
+      "email": "admin.ly@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Ly Admin",
+      "phone_number": "+218910000007",
+      "verified": true,
+      "user_id": "user_005"
+    }
+  ],
+  "by_role": {
+    "admin": [
+      {
+        "email": "admin.ly@example.com",
+        "password": "admin123",
+        "verified": true,
+        "user_id": "user_005"
+      }
+    ],
+    "host": [
+      {
+        "email": "ahmed.ali@example.com",
+        "password": "password123",
+        "verified": true,
+        "user_id": "user_001"
+      },
+      {
+        "email": "omar.hassan@example.com",
+        "password": "host123",
+        "verified": true,
+        "user_id": "user_003"
+      }
+    ],
+    "guest": [
+      {
+        "email": "sara.mohamed@example.com",
+        "password": "user123",
+        "verified": true,
+        "user_id": "user_002"
+      },
+      {
+        "email": "mariam.essa@example.com",
+        "password": "guest123",
+        "verified": true,
+        "user_id": "user_004"
+      }
+    ]
+  }
+}

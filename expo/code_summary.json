@@ -1,0 +1,83 @@
+{
+  "tech_stack": ["React Native", "Expo", "TypeScript", "Node.js", "Express", "PostgreSQL", "JWT", "Socket.io"],
+  "features": [
+    {
+      "name": "User Authentication",
+      "description": "Complete authentication system with registration, login, logout, and JWT token verification",
+      "files": ["backend/server.ts:271-401", "backend/schema.ts"]
+    },
+    {
+      "name": "Property Management",
+      "description": "Full property listing system with CRUD operations, photos, availability, and search",
+      "files": ["backend/server.ts:576-855", "backend/schema.ts"]
+    },
+    {
+      "name": "Booking System",
+      "description": "Complete booking management with status tracking, notifications, and reviews",
+      "files": ["backend/server.ts:1128-1432", "backend/schema.ts"]
+    },
+    {
+      "name": "Real-time Messaging",
+      "description": "WebSocket-based messaging system for guests and hosts with conversation management",
+      "files": ["backend/server.ts:1525-1812", "backend/schema.ts"]
+    },
+    {
+      "name": "Review System",
+      "description": "Multi-criteria rating system for properties with photo support",
+      "files": ["backend/server.ts:1814-1896", "backend/schema.ts"]
+    },
+    {
+      "name": "Notification System",
+      "description": "Real-time notifications for bookings, messages, and reviews",
+      "files": ["backend/server.ts:1898-1994", "backend/schema.ts"]
+    },
+    {
+      "name": "Admin Actions",
+      "description": "Admin panel for user verification and property approval",
+      "files": ["backend/server.ts", "backend/schema.ts"]
+    }
+  ],
+  "database_tables": ["users", "properties", "property_photos", "property_availability", "bookings", "conversations", "messages", "reviews", "review_photos", "admin_actions", "notifications"],
+  "api_endpoints": [
+    "/api/auth/register",
+    "/api/auth/login",
+    "/api/auth/logout",
+    "/api/auth/verify",
+    "/api/users/:user_id",
+    "/api/users/:user_id/listings",
+    "/api/users/:user_id/bookings",
+    "/api/users/:user_id/reviews",
+    "/api/properties",
+    "/api/properties/:property_id",
+    "/api/properties/:property_id/photos",
+    "/api/properties/:property_id/availability",
+    "/api/properties/:property_id/reviews",
+    "/api/bookings",
+    "/api/bookings/:booking_id",
+    "/api/bookings/:booking_id/reviews",
+    "/api/conversations",
+    "/api/conversations/:conversation_id",
+    "/api/conversations/:conversation_id/messages",
+    "/api/messages/:message_id",
+    "/api/reviews",
+    "/api/notifications",
+    "/api/notifications/:notification_id",
+    "/api/health"
+  ],
+  "frontend_structure": {
+    "framework": "Expo Router",
+    "navigation": "Tab-based with (tabs) directory",
+    "components": ["ParallaxScrollView", "ThemedText", "ThemedView", "HelloWave", "Collapsible", "ExternalLink"],
+    "styling": "StyleSheet with theme support",
+    "current_state": "Basic placeholder content with Expo tutorial information"
+  },
+  "backend_features": {
+    "authentication": "JWT-based with role-based access control",
+    "database": "PostgreSQL with comprehensive schema validation using Zod",
+    "file_upload": "Multer for image uploads with 5MB limit",
+    "real_time": "Socket.io for WebSocket connections",
+    "validation": "Zod schemas for all input validation",
+    "error_handling": "Comprehensive error responses with error codes",
+    "cors": "Configured for multiple origins including localhost and production"
+  }
+}

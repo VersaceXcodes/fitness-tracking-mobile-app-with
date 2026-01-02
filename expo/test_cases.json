@@ -1,0 +1,158 @@
+{
+  "testCases": [
+    {
+      "id": "functional-app-test",
+      "name": "Functional Application Test",
+      "category": "functionality",
+      "priority": "high",
+      "description": "Verify the React Native Expo app has actual functionality beyond basic placeholder",
+      "steps": [
+        "Navigate to application frontend (https://123expo-test.launchpulse.ai)",
+        "Verify multiple interactive elements exist (buttons, forms, links)",
+        "Check for proper navigation structure with tabs",
+        "Verify application has real features, not just 'Welcome' and tutorial text",
+        "Test navigation between Home and Explore tabs",
+        "Check for any API integration or data fetching"
+      ],
+      "expectedOutcome": "Application shows functional features, navigation works, and demonstrates real app functionality rather than placeholder content",
+      "failureCondition": "If page only shows 'Welcome' placeholder and tutorial text without actual app features, this test should FAIL"
+    },
+    {
+      "id": "ui-components-test",
+      "name": "UI Components Test",
+      "category": "interface",
+      "priority": "high",
+      "description": "Test that UI components are properly implemented in the React Native app",
+      "steps": [
+        "Check for buttons and verify they're clickable",
+        "Look for forms and input fields",
+        "Verify navigation menu/tabs exist and work",
+        "Test responsive design elements",
+        "Check for images and assets loading properly",
+        "Verify theme support (light/dark mode)"
+      ],
+      "expectedOutcome": "Multiple interactive UI components found and functional, proper navigation working"
+    },
+    {
+      "id": "content-quality-test",
+      "name": "Content Quality Test",
+      "category": "content",
+      "priority": "high",
+      "description": "Verify React Native app has meaningful content and professional appearance",
+      "steps": [
+        "Check page has substantial content beyond placeholder tutorial",
+        "Verify proper heading structure and typography",
+        "Look for actual application features (property listings, user profiles, etc.)",
+        "Ensure professional appearance and branding",
+        "Check for Libya-specific content or localization"
+      ],
+      "expectedOutcome": "Application demonstrates real functionality and professional design appropriate for a property rental platform"
+    },
+    {
+      "id": "backend-api-test",
+      "name": "Backend API Functionality Test",
+      "category": "api",
+      "priority": "high",
+      "description": "Test that all backend API endpoints are functional",
+      "steps": [
+        "Test health endpoint: GET /api/health",
+        "Test authentication: POST /api/auth/login with test user credentials",
+        "Test property search: GET /api/properties",
+        "Test user profile: GET /api/users/:user_id",
+        "Test booking creation and management",
+        "Test real-time messaging endpoints"
+      ],
+      "expectedOutcome": "All API endpoints return proper responses, authentication works, and data is correctly retrieved"
+    },
+    {
+      "id": "database-integration-test",
+      "name": "Database Integration Test",
+      "category": "database",
+      "priority": "high",
+      "description": "Verify database connectivity and data integrity",
+      "steps": [
+        "Confirm database has seed data loaded",
+        "Test user authentication with seeded credentials",
+        "Verify property listings exist in database",
+        "Check booking data integrity",
+        "Test foreign key constraints and relationships"
+      ],
+      "expectedOutcome": "Database contains proper seed data, relationships work correctly, and authentication succeeds with test users"
+    },
+    {
+      "id": "authentication-flow-test",
+      "name": "Authentication Flow Test",
+      "category": "security",
+      "priority": "high",
+      "description": "Test complete authentication flow including registration, login, and token validation",
+      "steps": [
+        "Test user registration with new credentials",
+        "Test login with existing test users from test_users.json",
+        "Verify JWT token generation and validation",
+        "Test protected endpoints with valid/invalid tokens",
+        "Test role-based access control (admin, host, guest)"
+      ],
+      "expectedOutcome": "Authentication flow works completely, tokens are properly generated and validated, role-based access control functions correctly"
+    },
+    {
+      "id": "property-management-test",
+      "name": "Property Management Test",
+      "category": "functionality",
+      "priority": "medium",
+      "description": "Test property listing and management functionality",
+      "steps": [
+        "Test property search with filters (location, dates, guests)",
+        "Test property creation by hosts",
+        "Test property photo upload and management",
+        "Test availability calendar functionality",
+        "Test property reviews and ratings"
+      ],
+      "expectedOutcome": "Property management features work correctly, search returns results, and CRUD operations function properly"
+    },
+    {
+      "id": "booking-system-test",
+      "name": "Booking System Test",
+      "category": "functionality",
+      "priority": "medium",
+      "description": "Test complete booking flow from search to confirmation",
+      "steps": [
+        "Test booking creation with valid data",
+        "Test booking status updates (pending, confirmed, cancelled)",
+        "Test booking notifications",
+        "Test booking reviews after completion",
+        "Test booking conflict resolution"
+      ],
+      "expectedOutcome": "Booking system handles complete flow correctly, notifications work, and status updates function properly"
+    },
+    {
+      "id": "real-time-messaging-test",
+      "name": "Real-time Messaging Test",
+      "category": "real-time",
+      "priority": "medium",
+      "description": "Test WebSocket-based messaging system",
+      "steps": [
+        "Test conversation creation between users",
+        "Test message sending and receiving",
+        "Test message read receipts",
+        "Test real-time message delivery",
+        "Test conversation access control"
+      ],
+      "expectedOutcome": "Messaging system works in real-time, conversations are properly managed, and access control functions correctly"
+    },
+    {
+      "id": "error-handling-test",
+      "name": "Error Handling Test",
+      "category": "reliability",
+      "priority": "medium",
+      "description": "Test error handling and validation throughout the system",
+      "steps": [
+        "Test invalid input validation",
+        "Test unauthorized access attempts",
+        "Test database constraint violations",
+        "Test API error responses",
+        "Test error message clarity and helpfulness"
+      ],
+      "expectedOutcome": "System handles errors gracefully, returns appropriate status codes, and provides helpful error messages"
+    }
+  ]
+}
